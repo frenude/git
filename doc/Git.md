@@ -49,7 +49,7 @@
 - `git branch`列出本地仓库的分支
 - `git branch -r`查看远程分支
 - `git branch -a`查看本地和远程分支（远程分支基本为`origin/dev`这种类型）
-- `git branch newName`创建一个newName 的分支
+- `git branch newName`创建一个`newName` 的分支
 - `git branch -m <name>  <changName>` 给分支改名字
 - `git branch -d [branchname]`删除本地已合并的分支
 - `git branch -D [branchName]`强制删除分支
@@ -106,9 +106,9 @@
 
 - 如果合并需要采用`rebase`模式，可以使用`–rebase`选项。`git pull --rebase <远程主机名> <远程分支名>:<本地分支名>`
 
-- git fetch和git pull的区别
+- `git fetch`和`git pull`的区别
 
-  - *git fetch*：相当于是从远程获取最新版本到本地，不会自动合并。
+  - `git fetch`：相当于是从远程获取最新版本到本地，不会自动合并。
 
     ```shell
     $ git fetch origin master
@@ -122,7 +122,7 @@
     - 然后比较本地的`master`分支和`origin/master`分支的差别
     - 最后进行合并
 
-  -  *git pull*：相当于是从远程获取最新版本并`merge`到本地
+  -  `git pull`：相当于是从远程获取最新版本并`merge`到本地
 
     - `git pull origin master`
     - `git fetch` 和 `git merge`
@@ -143,7 +143,7 @@
 - 不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用`–all`选项
 
   ```shell
-  git push --all origin
+  $ git push --all origin
   ```
 
 - 如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做`git pull`合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用`–force`选项。
@@ -174,8 +174,8 @@
 
 ### 21.`git shortlog`
 
-- 命令用于汇总git日志输出
-- 统计人员的commit`git shortlog -s -n`
+- 命令用于汇总`git`日志输出
+- 统计人员的`commit`:`git shortlog -s -n`
 
 ### 22.`git describe`
 
@@ -184,7 +184,7 @@
 ### 23.`git rebase`
 
 - 另一个分支基础之上重新应用，用于把一个分支的修改合并到当前分支
-- 相当于merge 但是更明显 是一串 比较清晰
+- 相当于`merge` 但是更明显 是一串 比较清晰
 - `git rebase branch1 branch2`
 
 ### 24.`git cherry-pick `
